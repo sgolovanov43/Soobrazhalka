@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<animation-list android:oneshot="false" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/animaciya_avtobus11"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_avtobus12"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_avtobus13"/>
+</animation-list>

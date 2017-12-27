@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<animation-list android:oneshot="false" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="10" android:drawable="@drawable/animaciya_strekoza21"/>
+    <item android:duration="10" android:drawable="@drawable/animaciya_strekoza22"/>
+    <item android:duration="10" android:drawable="@drawable/animaciya_strekoza23"/>
+    <item android:duration="10" android:drawable="@drawable/animaciya_strekoza22"/>
+    <item android:duration="10" android:drawable="@drawable/animaciya_strekoza21"/>
+</animation-list>

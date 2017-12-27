@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<animation-list android:oneshot="false" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/animaciya_kometa21"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_kometa22"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_kometa23"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_kometa24"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_kometa25"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_kometa26"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_kometa27"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_kometa28"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_kometa29"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_kometa210"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_kometa211"/>
+</animation-list>

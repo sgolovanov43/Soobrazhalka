@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<animation-list android:oneshot="false" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/animaciya_babochka1"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_babochka2"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_babochka3"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_babochka4"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_babochka5"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_babochka6"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_babochka7"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_babochka8"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_babochka7"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_babochka6"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_babochka5"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_babochka4"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_babochka3"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_babochka2"/>
+</animation-list>

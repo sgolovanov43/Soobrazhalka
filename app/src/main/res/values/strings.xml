@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Соображалка</string>
+    <string name="animation_key">animation_key</string>
+    <string name="bukvy_key">bukvy_key</string>
+    <string name="vibration_key">vibration_key</string>
+    <string name="background_key">background_key</string>
+    <string name="stars_key">stars_key</string>
+    <string name="animate_background_key">animate_background_key</string>
+    <string name="animation_caption">Подсвечивать элементы</string>
+    <string name="background_caption">Изменение фона</string>
+    <string name="background_1">Статичный фон</string>
+    <string name="background_2">Редко</string>
+    <string name="background_3">Нормально</string>
+    <string name="background_4">Часто</string>
+    <string name="value_1">1</string>
+    <string name="value_2">2</string>
+    <string name="value_3">3</string>
+    <string name="value_4">4</string>
+    <string name="value_yes">Да</string>
+    <string name="value_no">Нет</string>
+    <string name="purchased_key">purchased_key</string>
+    <string name="soobrazhalka2_key">soobrazhalka2_key</string>
+</resources>

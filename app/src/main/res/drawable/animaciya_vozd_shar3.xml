@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<animation-list android:oneshot="false" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/animaciya_vozd_shar31"/>
+    <item android:duration="95" android:drawable="@drawable/animaciya_vozd_shar32"/>
+    <item android:duration="90" android:drawable="@drawable/animaciya_vozd_shar33"/>
+    <item android:duration="80" android:drawable="@drawable/animaciya_vozd_shar34"/>
+    <item android:duration="80" android:drawable="@drawable/animaciya_vozd_shar35"/>
+    <item android:duration="90" android:drawable="@drawable/animaciya_vozd_shar36"/>
+    <item android:duration="95" android:drawable="@drawable/animaciya_vozd_shar37"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_vozd_shar38"/>
+    <item android:duration="95" android:drawable="@drawable/animaciya_vozd_shar37"/>
+    <item android:duration="90" android:drawable="@drawable/animaciya_vozd_shar36"/>
+    <item android:duration="80" android:drawable="@drawable/animaciya_vozd_shar35"/>
+    <item android:duration="00" android:drawable="@drawable/animaciya_vozd_shar34"/>
+    <item android:duration="90" android:drawable="@drawable/animaciya_vozd_shar33"/>
+    <item android:duration="95" android:drawable="@drawable/animaciya_vozd_shar32"/>
+</animation-list>

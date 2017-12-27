@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<animation-list android:oneshot="false" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/animaciya_parovozik21"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_parovozik22"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_parovozik23"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_parovozik24"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_parovozik25"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_parovozik26"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_parovozik27"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_parovozik28"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_parovozik29"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_parovozik210"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_parovozik211"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_parovozik212"/>
+</animation-list>

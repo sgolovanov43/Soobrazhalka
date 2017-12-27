@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<animation-list android:oneshot="false" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/animaciya_rybka31"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_rybka32"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_rybka33"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_rybka34"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_rybka33"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_rybka32"/>
+</animation-list>

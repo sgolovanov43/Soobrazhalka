@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ListPreference android:entryValues="@array/values" android:entries="@array/backgrounds" android:title="@string/background_caption" android:defaultValue="@string/value_3" android:key="@string/background_key"/>
+    <CheckBoxPreference android:title="@string/animation_caption" android:summaryOn="@string/value_yes" android:key="@string/animation_key" android:defaultValue="@string/value_yes" android:summaryOff="@string/value_no"/>
+    
+</PreferenceScreen>

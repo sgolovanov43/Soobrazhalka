@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="values">
+<item>@string/value_1</item>
+<item>@string/value_2</item>
+<item>@string/value_3</item>
+<item>@string/value_4</item>
+</string-array>
+<string-array name="backgrounds">
+<item>@string/background_1</item>
+<item>@string/background_2</item>
+<item>@string/background_3</item>
+<item>@string/background_4</item>
+</string-array>
+</resources>

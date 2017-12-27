@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<animation-list android:oneshot="true" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/animaciya_shtora210"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_shtora29"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_shtora28"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_shtora27"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_shtora26"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_shtora25"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_shtora24"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_shtora23"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_shtora22"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_shtora21"/>
+    <item android:duration="50" android:drawable="@drawable/animaciya_shtora11"/>
+
+</animation-list>

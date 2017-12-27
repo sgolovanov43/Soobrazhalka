@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<animation-list android:oneshot="false" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="300" android:drawable="@drawable/animaciya_meduza21"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_meduza22"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_meduza23"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_meduza24"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_meduza25"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_meduza26"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_meduza25"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_meduza24"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_meduza23"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_meduza22"/>
+</animation-list>

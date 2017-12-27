@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<animation-list android:oneshot="false" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="30" android:drawable="@drawable/animaciya_raketa11"/>
+    <item android:duration="30" android:drawable="@drawable/animaciya_raketa12"/>
+    <item android:duration="30" android:drawable="@drawable/animaciya_raketa13"/>
+    <item android:duration="30" android:drawable="@drawable/animaciya_raketa14"/>
+    <item android:duration="30" android:drawable="@drawable/animaciya_raketa15"/>
+    <item android:duration="30" android:drawable="@drawable/animaciya_raketa16"/>
+    <item android:duration="30" android:drawable="@drawable/animaciya_raketa17"/>
+    <item android:duration="30" android:drawable="@drawable/animaciya_raketa18"/>
+    <item android:duration="30" android:drawable="@drawable/animaciya_raketa17"/>
+    <item android:duration="30" android:drawable="@drawable/animaciya_raketa16"/>
+    <item android:duration="30" android:drawable="@drawable/animaciya_raketa15"/>
+    <item android:duration="30" android:drawable="@drawable/animaciya_raketa14"/>
+    <item android:duration="30" android:drawable="@drawable/animaciya_raketa13"/>
+    <item android:duration="30" android:drawable="@drawable/animaciya_raketa12"/>
+</animation-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<animation-list android:oneshot="false" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/animaciya_gruzovik11"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_gruzovik12"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_gruzovik13"/>
+</animation-list>

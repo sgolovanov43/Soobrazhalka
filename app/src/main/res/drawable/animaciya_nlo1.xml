@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<animation-list android:oneshot="false" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/animaciya_nlo11"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_nlo12"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_nlo13"/>
+    <item android:duration="100" android:drawable="@drawable/animaciya_nlo14"/>
+</animation-list>
