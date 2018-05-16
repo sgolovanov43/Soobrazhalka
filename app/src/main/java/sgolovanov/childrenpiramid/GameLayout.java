@@ -83,6 +83,7 @@ public abstract class GameLayout extends RelativeLayout {
                 //float grid_scale = (ListBackground.getDrawable().getIntrinsicHeight() * bmp_factor) / 620;
                 Left = (Owner.getViewWidth() - bmp_factor * 1200f) / 2f;
                 Top = (Owner.getViewHeight() - bmp_factor * 620f) / 2f;
+
                 LoadLevel();
             }
         });

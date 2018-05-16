@@ -5,8 +5,6 @@ import android.media.MediaPlayer;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.google.android.gms.ads.AdListener;
-
 /**
  * Created by Sergey on 25.10.2015.
  */
@@ -70,9 +68,9 @@ public class ExitScreen extends GameLayout {
         });
         addView(backButton);
 
-        if (Owner.mInterstitialAd.isLoaded()) {
-            Owner.mInterstitialAd.show();
-        }
+        //if (Owner.mInterstitialAd.isLoaded()) {
+        //    Owner.mInterstitialAd.show();
+        //}
     }
 
 }

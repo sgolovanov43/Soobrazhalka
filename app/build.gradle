@@ -5,11 +5,11 @@ android {
     buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "sgolovanov.childrenpiramid"
-        minSdkVersion 16
-        targetSdkVersion 19
+        minSdkVersion 19
+        targetSdkVersion 26
         multiDexEnabled true
-        versionCode 67
-        versionName '7.7'
+        versionCode 71
+        versionName '7.9'
     }
     buildTypes {
         release {
@@ -25,5 +25,5 @@ android {
 }
 
 dependencies {
-    compile 'com.google.android.gms:play-services:11+'
+    implementation 'com.google.android.gms:play-services:11+'
 }

@@ -3504,6 +3504,7 @@ public class GameView extends RelativeLayout {
 	}
         private void StartLevel()
         {
+        	showInterstatial();
 			this.post(new Runnable() {
 				@Override
 				public void run() {
@@ -5719,5 +5720,17 @@ public class GameView extends RelativeLayout {
 	{
 		return GameView.Owner.getViewHeight()<=480 || memoryInfo.totalMem<768*1024*1024;
 	}
+
+	private final static int maxInterstaatinalPeriod = 9;
+	private int interstatinalPeriod = 0;
+	public void showInterstatial() {
+		if(interstatinalPeriod<maxInterstaatinalPeriod)
+			interstatinalPeriod++;
+		else if (Owner.mInterstitialAd.isLoaded()) {
+			interstatinalPeriod=0;
+			Owner.mInterstitialAd.show();
+		}
+	}
+
 
 }

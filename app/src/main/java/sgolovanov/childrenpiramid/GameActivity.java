@@ -262,6 +262,7 @@ public class GameActivity extends Activity {
 
 	public int getViewHeight()
 	{
+		//int footerSpace = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 10, )
 		return MyGameView.getHeight();
 	}
 
