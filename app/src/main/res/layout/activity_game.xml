@@ -8,18 +8,18 @@
     android:orientation="vertical">
 
     <RelativeLayout
+        android:id="@+id/relativeLayoutAds"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:id="@+id/relativeLayoutAds"
         android:background="@android:color/black">
 
-        <com.google.android.gms.ads.AdView
-            android:id="@+id/adView"
+        <com.yandex.mobile.ads.banner.BannerAdView
+            android:id="@+id/banner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:adSize="SMART_BANNER"
-            app:adUnitId="ca-app-pub-4919341775273582/5197519905"/>
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
 
     </RelativeLayout>
 

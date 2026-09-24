@@ -1,0 +1,31 @@
+[versions]
+agp = "9.3.2"
+coreKtx = "1.19.0"
+junit = "4.13.2"
+lifecycleRuntimeKtx = "2.11.0"
+appcompat = "1.8.0"
+mobileads = "8.4.0"
+constraintlayout = "2.2.2"
+coil = "3.6.2"
+androidsvg = "1.4"
+retrofit = "3.0.0"
+curlloggerinterceptor = "0.1"
+logging-interceptor = "5.5.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+mobileads = { group = "com.yandex.android", name = "mobileads", version.ref = "mobileads" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidsvg = { group = "com.caverock", name = "androidsvg-aar", version.ref = "androidsvg" }
+retrofit2 =  { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit2-adapter-rxjava2 = { group = "com.squareup.retrofit2", name = "adapter-rxjava2", version.ref = "retrofit" }
+retrofit2-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+curlloggerinterceptor = { group = "com.github.grapesnberries", name = "curlloggerinterceptor", version.ref = "curlloggerinterceptor" }
+okhttp3-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "logging-interceptor" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

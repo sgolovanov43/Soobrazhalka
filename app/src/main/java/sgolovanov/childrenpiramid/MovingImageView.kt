@@ -1,292 +1,300 @@
-package sgolovanov.childrenpiramid;
+package sgolovanov.childrenpiramid
 
-import android.annotation.SuppressLint;
-import android.content.Context;
-import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.graphics.Point;
-import android.graphics.Rect;
-import android.graphics.RectF;
-import android.util.TypedValue;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.ScaleAnimation;
-import android.view.animation.TranslateAnimation;
-import android.widget.ImageView;
+import android.annotation.SuppressLint
+import android.content.Context
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Paint
+import android.graphics.Point
+import android.graphics.Rect
+import android.graphics.RectF
+import android.util.TypedValue
+import android.view.MotionEvent
+import android.view.View
+import android.view.View.OnTouchListener
+import android.view.animation.Animation
+import android.view.animation.Animation.AnimationListener
+import android.view.animation.ScaleAnimation
+import android.view.animation.TranslateAnimation
+import androidx.core.graphics.withRotation
 
-import java.security.acl.Owner;
+open class MovingImageView(
+    context: Context,
+    var mGameView: GameView
+) : View(context), OnTouchListener {
+    @JvmField
+    var mLastTouchX: Float = 0f
+    @JvmField
+    var mLastTouchY: Float = 0f
+    @JvmField
+    var mClearObject: ShadowImageView? = null
+    @JvmField
+    var isSetOnPosition: Boolean = false
+    @JvmField
+    var mObjectNumber: Int = 0
+    var invisiblePointsNum: Int = 0
+    @JvmField
+    var bitmap: Bitmap? = null
+    @JvmField
+    var visiblePoints: Int = 0
+    @JvmField
+    var currentAngle: Float = 0f
+    var dockPointX: Float = 0f
+    var dockPointY: Float = 0f
+    @JvmField
+    var maskOfBitmap: IntArray? = null
+    @JvmField
+    var bitmapiMul: Float = 1f
 
-public class MovingImageView extends View implements View.OnTouchListener
-{
-	float mLastTouchX=0;
-	float mLastTouchY=0;
-	GameView mGameView;
-	public ShadowImageView mClearObject;
-	public boolean isSetOnPosition;
-	public int mObjectNumber;
-	int invisiblePointsNum=0;
-	Bitmap bitmap;
-	int visiblePoints=0;
-	float currentAngle=0;
-	float dockPointX=0;
-	float dockPointY=0;
-	int[] maskOfBitmap=null;
-	float bitmapiMul=1;
-	public MovingImageView(Context context,GameView parent/*,ImageView clear_object,int num*/) 
-	{
-		super(context);
-		// TODO Auto-generated constructor stub
-		mGameView=parent;
-		//mClearObject=clear_object;
-		isSetOnPosition=false;
-		//mObjectNumber=num;
-		setOnTouchListener(this);
-		currentAngle=0;
-	}
-
-	@Override
-    protected void onDraw(Canvas canvas) {
-        Paint paint=new Paint();
-		paint.setAntiAlias(true);
-        /*if(backgroundBitmap!=null)
-            canvas.drawBitmap(backgroundBitmap,null,new Rect(0,0,getWidth(),getHeight()),paint);*/
-        if(bitmap!=null) {
-            Rect drawRect=new Rect(0, 0, getWidth(), getHeight());
-			if(currentAngle!=0) {
-				canvas.save();
-				canvas.rotate(currentAngle, getWidth() / 2, getHeight() / 2);
-				//canvas.rotate(currentAngle);
-				canvas.drawBitmap(bitmap, null, drawRect,paint);
-				canvas.restore();
-			}
-			else
-				canvas.drawBitmap(bitmap, null, drawRect,paint);
-		}
+    init {
+        // TODO Auto-generated constructor stub
+        //mClearObject=clear_object;
+        //mObjectNumber=num;
+        setOnTouchListener(this)
+        currentAngle = 0f
     }
 
-	public int getBitmapWidth()
-	{
-		return (int) (bitmap.getWidth()*bitmapiMul);//*(GameView.isScaledBitmaps()?2:1);
-	}
-	public int getBitmapHeight()
-	{
-		return (int) (bitmap.getHeight()*bitmapiMul);//*(GameView.isScaledBitmaps()?2:1);
-	}
-	public void setBitmapiMul(float imul)
-	{
-		bitmapiMul=imul;
-	}
+    @SuppressLint("DrawAllocation")
+    override fun onDraw(canvas: Canvas) {
+        val paint = Paint()
+        paint.isAntiAlias = true
+        bitmap?.let { bitmap ->
+            val drawRect = Rect(0, 0, width, height)
+            if (currentAngle != 0f) {
+                canvas.withRotation(
+                    currentAngle,
+                    (width / 2).toFloat(),
+                    (height / 2).toFloat()
+                ) {
+                    //canvas.rotate(currentAngle);
+                    drawBitmap(bitmap, null, drawRect, paint)
+                }
+            } else canvas.drawBitmap(bitmap, null, drawRect, paint)
+        }
+    }
 
-	public void setAngle(float angle)
-	{
-		currentAngle=angle;
-		invalidate();
-	}
+    val bitmapWidth: Int
+        get() = (bitmap?.getWidth().orZero() * bitmapiMul).toInt() //*(GameView.isScaledBitmaps()?2:1);
+    val bitmapHeight: Int
+        get() = (bitmap?.getHeight().orZero() * bitmapiMul).toInt() //*(GameView.isScaledBitmaps()?2:1);
 
-	public float getAngle()
-	{
-		return currentAngle;
-	}
+    fun setBitmapiMul(imul: Float) {
+        bitmapiMul = imul
+    }
 
-	public int getVisiblePoints()
-	{
-		return visiblePoints;
-	}
+    var angle: Float
+        get() = currentAngle
+        set(angle) {
+            currentAngle = angle
+            invalidate()
+        }
 
-	public Point getVisiblePoint(int pointNum)
-	{
-		int visiblePoints=0;
-		//int max_pos=bitmap.getWidth()*bitmap.getHeight();
-		//int pixels1[]=new int[max_pos];
-		//bitmap.getPixels(pixels1, 0, bitmap.getWidth(), 0, 0, bitmap.getWidth(), bitmap.getHeight());
-		for(int x=0;x<bitmap.getWidth();x++)
-			for(int y=0;y<bitmap.getHeight();y++)
-			{
-				int itemOfMask=y*bitmap.getWidth()+x;
-				int posOfMask=itemOfMask/Integer.SIZE;
-				int bitOfMask=itemOfMask%Integer.SIZE;
-				if((maskOfBitmap[posOfMask] & (1 << bitOfMask))!=0) {
-					visiblePoints++;
-					if(visiblePoints==pointNum)
-						return new Point((int)(x/((float)bitmap.getWidth()/getWidth())),(int)(y/((float)bitmap.getHeight()/getHeight())));
-				}
-			}
-		return new Point(0,0);
-	}
+    fun getVisiblePoint(pointNum: Int): Point {
+        var visiblePoints = 0
+        //int max_pos=bitmap.getWidth()*bitmap.getHeight();
+        //int pixels1[]=new int[max_pos];
+        //bitmap.getPixels(pixels1, 0, bitmap.getWidth(), 0, 0, bitmap.getWidth(), bitmap.getHeight());
+        for (x in 0..<bitmap?.getWidth().orZero()) for (y in 0..<bitmap?.getHeight().orZero()) {
+            val itemOfMask = y * bitmap?.getWidth().orZero() + x
+            val posOfMask = itemOfMask / Integer.SIZE
+            val bitOfMask = itemOfMask % Integer.SIZE
+            if ((maskOfBitmap!![posOfMask] and (1 shl bitOfMask)) != 0) {
+                visiblePoints++
+                if (visiblePoints == pointNum) return Point(
+                    (x / (bitmap?.getWidth().orZero().toFloat() / width)).toInt(),
+                    (y / (bitmap?.getHeight().orZero().toFloat() / height)).toInt()
+                )
+            }
+        }
+        return Point(0, 0)
+    }
 
-	public boolean isVisiblePoint(int x,int y)
-	{
-		int itemOfMask= (int) (y/bitmapiMul*bitmap.getWidth()+x/bitmapiMul);
-		int posOfMask=itemOfMask/Integer.SIZE;
-		int bitOfMask=itemOfMask%Integer.SIZE;
-		if(posOfMask>=0 && posOfMask < maskOfBitmap.length && (maskOfBitmap[posOfMask] & (1 << bitOfMask))!=0)
-			return true;
-		return false;
-	}
+    open fun isVisiblePoint(x: Int, y: Int): Boolean {
+        val itemOfMask = (y / bitmapiMul * bitmap?.getWidth().orZero() + x / bitmapiMul).toInt()
+        val posOfMask = itemOfMask / Integer.SIZE
+        val bitOfMask = itemOfMask % Integer.SIZE
+        return maskOfBitmap?.let { maskOfBitmap ->
+            posOfMask >= 0 && posOfMask < maskOfBitmap.size && (maskOfBitmap[posOfMask] and (1 shl bitOfMask)) != 0
+        } ?: false
+    }
 
-	public Bitmap getBitmap()
-	{
-		return bitmap;
-	}
+    fun setImageBitmap(bitmap: Bitmap) {
+        this.bitmap = bitmap
+        visiblePoints = 0
+        val maxPos = bitmap.getWidth() * bitmap.getHeight()
+        IntArray(maxPos / Integer.SIZE + 1).let { maskOfBitmap ->
+            this.maskOfBitmap = maskOfBitmap
+            for (i in maskOfBitmap.indices) maskOfBitmap[i] = 0
+            val pixels1 = IntArray(maxPos)
+            bitmap.getPixels(
+                pixels1,
+                0,
+                bitmap.getWidth(),
+                0,
+                0,
+                bitmap.getWidth(),
+                bitmap.getHeight()
+            )
+            for (x in 0..<bitmap.getWidth()) for (y in 0..<bitmap.getHeight()) {
+                if ((pixels1[y * bitmap.getWidth() + x] and -0x1000000) != 0) {
+                    visiblePoints++
+                    val itemOfMask = y * bitmap.getWidth() + x
+                    val posOfMask = itemOfMask / Integer.SIZE
+                    val bitOfMask = itemOfMask % Integer.SIZE
+                    maskOfBitmap[posOfMask] = maskOfBitmap[posOfMask] or (1 shl bitOfMask)
+                }
+            }
+        }
+    }
 
-	public void setImageBitmap(Bitmap bmp)
-	{
-		bitmap=bmp;
-		visiblePoints=0;
-		int max_pos=bitmap.getWidth()*bitmap.getHeight();
-		maskOfBitmap=new int[max_pos/Integer.SIZE+1];
-		for(int i=0;i<maskOfBitmap.length;i++)
-			maskOfBitmap[i]=0;
-		int pixels1[]=new int[max_pos];
-		bitmap.getPixels(pixels1, 0, bitmap.getWidth(), 0, 0, bitmap.getWidth(), bitmap.getHeight());
-		for(int x=0;x<bitmap.getWidth();x++)
-			for(int y=0;y<bitmap.getHeight();y++)
-			{
-				if((pixels1[y*bitmap.getWidth()+x] & 0xff000000)!=0) {
-					visiblePoints++;
-					int itemOfMask=y*bitmap.getWidth()+x;
-					int posOfMask=itemOfMask/Integer.SIZE;
-					int bitOfMask=itemOfMask%Integer.SIZE;
-					maskOfBitmap[posOfMask]=maskOfBitmap[posOfMask] | (1 << bitOfMask);
-				}
-			}
-	}
+    open fun setImageBitmap(bmp: Bitmap, iMul: Float) {
+        setImageBitmap(bmp)
+        setBitmapiMul(iMul)
+    }
 
-	public void setImageBitmap(Bitmap bmp,float iMul) {
-		setImageBitmap(bmp);
-		setBitmapiMul(iMul);
-	}
-	public void setDockPoint(float x,float y)
-	{
-		dockPointX=x;
-		dockPointY=y;
-	}
+    fun setDockPoint(x: Float, y: Float) {
+        dockPointX = x
+        dockPointY = y
+    }
 
-	void touchAnimation()
-	{
-		Animation animation=new ScaleAnimation(1,1.2f,1,1.2f,getWidth()/2,getHeight()/2);
-		animation.setDuration(200);
-		animation.setRepeatMode(Animation.REVERSE);
-		this.startAnimation(animation);
-	}
+    fun touchAnimation() {
+        val animation: Animation = ScaleAnimation(
+            1f,
+            1.2f,
+            1f,
+            1.2f,
+            (width / 2).toFloat(),
+            (height / 2).toFloat()
+        )
+        animation.setDuration(200)
+        animation.repeatMode = Animation.REVERSE
+        this.startAnimation(animation)
+    }
 
-	@Override
-	public boolean onTouch(View view, MotionEvent me) 
-	{
-		if(isSetOnPosition) {
-			if(mGameView.CurrentScreenType!=1)
-				return false;
-			if(me.getAction()==MotionEvent.ACTION_DOWN && isVisiblePoint((int)me.getX(),(int)me.getY()) &&
-					!mGameView.isHasMovingObjectAtPoint(new Point((int)(mClearObject.getLeft()+me.getX()),(int)(mClearObject.getTop()+me.getY())))) {
-				mGameView.playItemName(mObjectNumber);
-				touchAnimation();
-			}
-			return false;
-		}
-		float x=this.getLeft()+me.getX();
-		float y=this.getTop()+me.getY();
-		switch (me.getAction()) {
-		case MotionEvent.ACTION_DOWN: {
-			if(isVisiblePoint((int)me.getX(),(int)me.getY())==false && mGameView.isHasMovingObjectAtPoint(new Point((int)(mClearObject.getLeft()+me.getX()),(int)(mClearObject.getTop()+me.getY()))))
-				return false;
-			this.bringToFront();
-			mLastTouchX=x;
-			mLastTouchY=y;
-			return true;
-		}
-		case MotionEvent.ACTION_MOVE: {
-			//this.setX(this.getX()-(mLastTouchX-x));
-			//this.setY(this.getY()-(mLastTouchY-y));
-			int left=(int) (this.getLeft()-(mLastTouchX-x));
-			int top=(int) (this.getTop()-(mLastTouchY-y));
-			mLastTouchX=x;
-			mLastTouchY=y;
-			float w=getWidth();
-			float h=getHeight();
-			//ListObjects[num].setLeft((int) (event.getY()-PrevTouchPos1Y));
-			//ListObjects[num].setTop((int)(event.getY()-PrevTouchPos1Y));
-			if(left<0)
-				left=0;
-			if(left+w>=GameView.Owner.getViewWidth())
-				left=(int) (GameView.Owner.getViewWidth()-w);
-			if(top<0)
-				top=0;
-			if(top+h>=GameView.Owner.getViewHeight())
-				top=(int) (GameView.Owner.getViewHeight()-h);
-			mGameView.setBounds(this,left,top,left+w,top+h);
-			//this.setX(this.getX()-(mLastTouchX-x));
-			//this.setY(this.getY()-(mLastTouchY-y));
-			//ListObjects[num].setBottom((int) (ListObjects[num].getTop()+h));
-			Resources res=getResources();
-        	float delta=TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 10, res.getDisplayMetrics());
-			RectF check_rect=new RectF(
-					mClearObject.getLeft()+(mClearObject.getRight()-mClearObject.getLeft())/2-delta,
-					mClearObject.getTop()+(mClearObject.getBottom()-mClearObject.getTop())/2-delta,
-					mClearObject.getLeft()+(mClearObject.getRight()-mClearObject.getLeft())/2+delta,
-					mClearObject.getTop()+(mClearObject.getBottom()-mClearObject.getTop())/2+delta
-					);
-			if(check_rect.contains(this.getLeft()+(this.getRight()-this.getLeft())/2, 
-					this.getTop()+(this.getBottom()-this.getTop())/2))
-			{
-				touchAnimation();
-				mGameView.SmallClick();
-				//this.setOnTouchListener(null);
-				isSetOnPosition=true;
-				mGameView.setBounds(this,
-						mClearObject.getLeft(),
-						mClearObject.getTop(),
-						mClearObject.getRight(),
-						mClearObject.getBottom());
-				mGameView.CheckCompleteLevel(mObjectNumber);
-			}
-			return true;
-		}
-		case MotionEvent.ACTION_CANCEL:
-		case MotionEvent.ACTION_UP: {
-			}
-			break;
-		}
-		return false;
-	}
+    override fun onTouch(view: View?, me: MotionEvent): Boolean {
+        if (isSetOnPosition) {
+            if (GameView.currentScreenType != 1) return false
+            if ((me.action == MotionEvent.ACTION_DOWN) && isVisiblePoint(
+                    me.x.toInt(),
+                    me.y.toInt()
+                ) && !mGameView.isHasMovingObjectAtPoint(
+                    Point(
+                        (mClearObject?.left.orZero() + me.x).toInt(),
+                        (mClearObject?.top.orZero() + me.y).toInt()
+                    )
+                )
+            ) {
+                mGameView.playItemName(mObjectNumber)
+                touchAnimation()
+            }
+            return false
+        }
+        val x = left + me.x
+        val y = top + me.y
+        when (me.action) {
+            MotionEvent.ACTION_DOWN -> {
+                if (!isVisiblePoint(
+                        me.x.toInt(),
+                        me.y.toInt()
+                    ) && mGameView.isHasMovingObjectAtPoint(
+                        Point(
+                            (mClearObject?.left.orZero() + me.x).toInt(),
+                            (mClearObject?.top.orZero() + me.y).toInt()
+                        )
+                    )
+                ) return false
+                this.bringToFront()
+                mLastTouchX = x
+                mLastTouchY = y
+                return true
+            }
 
-	public void returnToDock()
-	{
-		Animation animation=new TranslateAnimation(0,dockPointX-getLeft(),0,dockPointY-getTop());
-		animation.setDuration(200);
-		animation.setAnimationListener(new Animation.AnimationListener() {
-			@Override
-			public void onAnimationStart(Animation animation) {
-			}
+            MotionEvent.ACTION_MOVE -> {
+                var left = (this.left - (mLastTouchX - x)).toInt()
+                var top = (this.top - (mLastTouchY - y)).toInt()
+                mLastTouchX = x
+                mLastTouchY = y
+                val w = width.toFloat()
+                val h = height.toFloat()
+                if (left < 0) left = 0
+                if (left + w >= GameView.Owner.viewWidth) left =
+                    (GameView.Owner.viewWidth - w).toInt()
+                if (top < 0) top = 0
+                if (top + h >= GameView.Owner.viewHeight) top =
+                    (GameView.Owner.viewHeight - h).toInt()
+                mGameView.setBounds(this, left.toFloat(), top.toFloat(), left + w, top + h)
+                val res = resources
+                val delta = TypedValue.applyDimension(
+                    TypedValue.COMPLEX_UNIT_DIP,
+                    10f,
+                    res.getDisplayMetrics()
+                )
+                mClearObject?.let { mClearObject ->
+                    val checkRect = RectF(
+                        mClearObject.left + (mClearObject.right - mClearObject.left) / 2 - delta,
+                        mClearObject.top + (mClearObject.bottom - mClearObject.top) / 2 - delta,
+                        mClearObject.left + (mClearObject.right - mClearObject.left) / 2 + delta,
+                        mClearObject.top + (mClearObject.bottom - mClearObject.top) / 2 + delta
+                    )
+                    if (checkRect.contains(
+                            (this.left + (this.right - this.left) / 2).toFloat(),
+                            (this.top + (this.bottom - this.top) / 2).toFloat()
+                        )
+                    ) {
+                        touchAnimation()
+                        mGameView.smallClick()
+                        //this.setOnTouchListener(null);
+                        isSetOnPosition = true
+                        mGameView.setBounds(
+                            this,
+                            mClearObject.left.toFloat(),
+                            mClearObject.top.toFloat(),
+                            mClearObject.right.toFloat(),
+                            mClearObject.bottom.toFloat()
+                        )
+                        mGameView.checkCompleteLevel(mObjectNumber)
+                    }
+                }
+                return true
+            }
 
-			@Override
-			public void onAnimationEnd(Animation animation) {
-				MovingImageView.this.clearAnimation();
-				mGameView.setBounds(MovingImageView.this,dockPointX,dockPointY,dockPointX+getWidth(),dockPointY+getHeight());
-			}
+            MotionEvent.ACTION_CANCEL, MotionEvent.ACTION_UP -> {}
+        }
+        return false
+    }
 
-			@Override
-			public void onAnimationRepeat(Animation animation) {
+    fun returnToDock() {
+        val animation: Animation =
+            TranslateAnimation(0f, dockPointX - getLeft(), 0f, dockPointY - getTop())
+        animation.setDuration(200)
+        animation.setAnimationListener(object : AnimationListener {
+            override fun onAnimationStart(animation: Animation?) {
+            }
 
-			}
-		});
-		this.startAnimation(animation);
-	}
+            override fun onAnimationEnd(animation: Animation?) {
+                this@MovingImageView.clearAnimation()
+                mGameView.setBounds(
+                    this@MovingImageView,
+                    dockPointX,
+                    dockPointY,
+                    dockPointX + getWidth(),
+                    dockPointY + getHeight()
+                )
+            }
 
-	public void recycleBitmap(Bitmap bitmap)
-	{
-		if(bitmap!=null && bitmap.isRecycled()==false)
-			bitmap.recycle();
-	}
+            override fun onAnimationRepeat(animation: Animation?) {
+            }
+        })
+        this.startAnimation(animation)
+    }
 
-	@Override
-	protected  void  onDetachedFromWindow() {
-		super.onDetachedFromWindow();
-		recycleBitmap(bitmap);
-		bitmap=null;
-	}
+    fun recycleBitmap(bitmap: Bitmap?) {
+        if (bitmap != null && !bitmap.isRecycled) bitmap.recycle()
+    }
 
-
+    override fun onDetachedFromWindow() {
+        super.onDetachedFromWindow()
+        recycleBitmap(bitmap)
+        bitmap = null
+    }
 }

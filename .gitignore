@@ -1,0 +1,8 @@
+/app/build/generated/ap_generated_sources/debug/out/
+/app/build/generated/source/buildConfig/debug/
+/app/build/generated/source/buildConfig/androidTest/debug/
+/build/
+/.gradle/
+/.idea/
+/app/build/
+/.kotlin/
