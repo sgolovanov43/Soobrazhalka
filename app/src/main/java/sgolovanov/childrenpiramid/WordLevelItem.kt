@@ -10,7 +10,6 @@ class WordLevelItem internal constructor(
     sound: Int,
     word: String
 ) : LevelItem(6, background, animatedBackground, list, sound, null) {
-    @JvmField
     val symbolWidth: Int = 150
 
     init {

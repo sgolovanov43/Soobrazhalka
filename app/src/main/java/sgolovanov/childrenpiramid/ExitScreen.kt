@@ -55,7 +55,7 @@ class ExitScreen(context: Context?) : GameLayout(context) {
             backButton.setScaleType(ImageView.ScaleType.FIT_END)
             backButton.setOnClickListener { //Owner.btnBack.setVisibility(VISIBLE);
                 //Owner.btnSelectLevel.setVisibility(VISIBLE);
-                Owner.MyGameView?.setCurrentScreenType(100)
+                Owner.myGameView().setCurrentScreenType(100)
                 Owner.returnToMenu(true)
             }
             addView(backButton)

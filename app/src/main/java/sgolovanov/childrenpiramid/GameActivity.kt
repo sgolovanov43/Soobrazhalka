@@ -1,65 +1,116 @@
 package sgolovanov.childrenpiramid
 
-import android.app.Activity
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.PowerManager
 import android.os.PowerManager.WakeLock
 import android.preference.PreferenceManager
 import android.util.DisplayMetrics
-import android.view.View
+import android.util.Log
 import android.view.ViewGroup
+import android.view.ViewTreeObserver
 import android.view.animation.Animation
 import android.view.animation.Animation.AnimationListener
 import android.view.animation.AnimationUtils
 import android.widget.RelativeLayout
+import androidx.activity.OnBackPressedCallback
+import androidx.appcompat.app.AppCompatActivity
+import com.yandex.mobile.ads.banner.BannerAdEventListener
+import com.yandex.mobile.ads.banner.BannerAdSize
+import com.yandex.mobile.ads.banner.BannerAdView
+import com.yandex.mobile.ads.common.AdRequest
+import com.yandex.mobile.ads.common.AdRequestError
+import com.yandex.mobile.ads.common.ImpressionData
+import sgolovanov.childrenpiramid.GameView.Companion.Owner
+import sgolovanov.childrenpiramid.GameView.Companion.currentScreenType
+import sgolovanov.childrenpiramid.databinding.ActivityGameBinding
+import kotlin.math.roundToInt
 
 
-class GameActivity : Activity() {
-    var MyGameView: GameView? = null
+class GameActivity : AppCompatActivity() {
+
+    private lateinit var binding : ActivityGameBinding
+
+    private val adSize: BannerAdSize
+        get() {
+            // Calculate the width of the ad, taking into account the padding in the ad container.
+            var adWidthPixels = binding.banner.width
+            if (adWidthPixels == 0) {
+                // If the ad hasn't been laid out, default to the full screen width
+                adWidthPixels = resources.displayMetrics.widthPixels
+            }
+            val adWidth = (adWidthPixels / resources.displayMetrics.density).roundToInt()
+
+            return BannerAdSize.sticky(this, adWidth)
+        }
+
+    private var bannerAd: BannerAdView? = null
+
     var pm: PowerManager? = null
     var wl: WakeLock? = null
     var mp: MediaPlayer? = null
-    @JvmField
     var gameLayout: GameLayout? = null
 
     public override fun onCreate(savedInstanceState: Bundle?) {
-        setTheme(R.style.FullscreenTheme)
+        //setTheme(R.style.FullscreenTheme)
         super.onCreate(savedInstanceState)
+
+        binding = ActivityGameBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
         PreferenceManager.getDefaultSharedPreferences(this)
         getSystemService(VIBRATOR_SERVICE)
-        //pm = getSystemService(POWER_SERVICE) as PowerManager?
-        //wl = pm!!.newWakeLock(PowerManager.FULL_WAKE_LOCK, "My Tag")
-        //wl!!.acquire()
+        pm = getSystemService(POWER_SERVICE) as PowerManager?
+        wl = pm?.newWakeLock(PowerManager.FULL_WAKE_LOCK, this.javaClass.simpleName)
+        wl?.acquire(10*60*1000L /*10 minutes*/)
 
-        setContentView(R.layout.activity_game)
+        initiateAds()
 
-        MyGameView = findViewById<View?>(R.id.game_view) as GameView?
         GameView.Owner = this
+
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                with(myGameView()) {
+                    when (currentScreenType) {
+                        100 -> exit()
+                        1000 -> {
+                            removeView(Owner.gameLayout)
+                            currentScreenType = 100
+                        }
+
+                        1, 200, 300 -> {
+                            smallClick()
+                            returnToMainMenu()
+                            currentScreenType = 100
+                        }
+                        2 -> {
+                            smallClick()
+                            startSelectLevel(3)
+                            currentScreenType = 200
+                        }
+                        102, 502, 3, 5, 6 -> {
+                            smallClick()
+                            initMainMenu()
+                            currentScreenType = 100
+                        }
+                        else -> onBackPressedDispatcher.onBackPressed()
+                    }
+                }
+            }
+        })
     }
 
-    fun setBounds(image: View, left: Float, top: Float, right: Float, bottom: Float) {
-        val lp = RelativeLayout.LayoutParams(
-            RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT
-        )
-        lp.leftMargin = left.toInt()
-        lp.topMargin = top.toInt()
-        lp.width = (right - left).toInt()
-        lp.height = (bottom - top).toInt()
-        image.setLayoutParams(lp)
-    }
-
-    fun Play(resource: Int) {
+    fun play(resource: Int) {
         try {
             mp = MediaPlayer.create(this, resource)
-            mp!!.start()
+            mp?.start()
         } catch (ex: Exception) {
         }
     }
 
     override fun onPause() {
-        if (MyGameView?.showStarsThread != null)
-            MyGameView?.showStarsThread?.interrupt()
+        if (myGameView().showStarsThread != null)
+            myGameView().showStarsThread?.interrupt()
         super.onPause()
     }
 
@@ -68,14 +119,58 @@ class GameActivity : Activity() {
         super.onStop()
     }
 
-    override fun onPostCreate(savedInstanceState: Bundle?) {
-        super.onPostCreate(savedInstanceState)
-        MyGameView?.post { MyGameView?.startView() }
+    override fun onStart() {
+        super.onStart()
+        myGameView().post { myGameView().startView() }
     }
 
     override fun onResume() {
         super.onResume()
-        wl?.acquire()
+        wl?.acquire(10*60*1000L /*10 minutes*/)
+    }
+
+    fun myGameView() = binding.gameView
+
+    private fun loadBannerAd(adSize: BannerAdSize): BannerAdView {
+        return binding.banner.apply {
+            setAdSize(adSize)
+            setBannerAdEventListener(object : BannerAdEventListener {
+                override fun onAdLoaded() {
+                    if (isDestroyed) {
+                        bannerAd?.destroy()
+                        return
+                    }
+                }
+
+                override fun onAdFailedToLoad(error: AdRequestError) {
+                    // Ad failed to load with AdRequestError.
+                    // Attempting to load a new ad from the onAdFailedToLoad() method is strongly discouraged.
+                    Log.i("YandexAds", "loadBannerAd ${error.description}")
+                }
+
+                override fun onAdClicked() {
+                    // Called when a click is recorded for an ad.
+                    //addLevelError(10)
+                }
+
+                override fun onImpression(impressionData: ImpressionData?) {
+                    // Called when an impression is recorded for an ad.
+                }
+            })
+            loadAd(
+                AdRequest.Builder("R-M-20111389-1").build()
+            )
+        }
+    }
+
+    private fun initiateAds() {
+        binding.banner.viewTreeObserver.addOnGlobalLayoutListener(object :
+            ViewTreeObserver.OnGlobalLayoutListener {
+            override fun onGlobalLayout() {
+                binding.banner.viewTreeObserver.removeOnGlobalLayoutListener(this);
+                bannerAd = loadBannerAd(adSize)
+            }
+        })
     }
 
     fun startNextStage(levelType: Int) {
@@ -96,7 +191,7 @@ class GameActivity : Activity() {
                 ViewGroup.LayoutParams.MATCH_PARENT
             )
             gameLayout?.setLayoutParams(layoutParams)
-            this@GameActivity.MyGameView!!.addView(gameLayout)
+            myGameView().addView(gameLayout)
             gameLayout?.StartView()
             val animation = AnimationUtils.loadAnimation(this, R.anim.show)
             animation.setAnimationListener(object : AnimationListener {
@@ -104,13 +199,14 @@ class GameActivity : Activity() {
                 }
 
                 override fun onAnimationEnd(animation: Animation?) {
-                    if (prevGameLayout != null) MyGameView!!.removeView(prevGameLayout)
+                    if (prevGameLayout != null)
+                        myGameView().removeView(prevGameLayout)
                 }
 
                 override fun onAnimationRepeat(animation: Animation?) {
                 }
             })
-            gameLayout!!.startAnimation(animation)
+            gameLayout?.startAnimation(animation)
         }
     }
 
@@ -122,7 +218,7 @@ class GameActivity : Activity() {
                 }
 
                 override fun onAnimationEnd(animation: Animation?) {
-                    MyGameView?.removeView(gameLayout)
+                    myGameView().removeView(gameLayout)
                     gameLayout = null
                     //enableButtons(true);
                 }
@@ -135,7 +231,7 @@ class GameActivity : Activity() {
     }
 
     val viewHeight: Int
-        get() = MyGameView?.height.orZero()
+        get() = myGameView().height.orZero()
 
     val viewWidth: Int
         get() {

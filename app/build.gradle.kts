@@ -46,7 +46,7 @@ androidComponents {
     onVariants { variant ->
         variant.outputs.forEach { output ->
             if (output is VariantOutputImpl) {
-                output.outputFileName = "knight-move-${variant.name}-${android.defaultConfig.versionName}.apk"
+                output.outputFileName = "children-piramid-${variant.name}-${android.defaultConfig.versionName}.apk"
             }
         }
     }

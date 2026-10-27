@@ -343,8 +343,8 @@ class GameView(context: Context?, attrs: AttributeSet?) : RelativeLayout(context
                 return true
             }
         } else if (currentScreenType == 200) {
-            if (levelsImages!![4] != null && isImageContains(
-                    levelsImages!![4],
+            if (levelsImages[4] != null && isImageContains(
+                    levelsImages[4],
                     event.x.toInt(),
                     event.y.toInt()
                 )
@@ -354,8 +354,8 @@ class GameView(context: Context?, attrs: AttributeSet?) : RelativeLayout(context
                     selectLevelPart--
                     makeFourLevelsIcons()
                 }
-            } else if (levelsImages!![5] != null && isImageContains(
-                    levelsImages!![5],
+            } else if (levelsImages[5] != null && isImageContains(
+                    levelsImages[5],
                     event.x.toInt(),
                     event.y.toInt()
                 )
@@ -367,8 +367,8 @@ class GameView(context: Context?, attrs: AttributeSet?) : RelativeLayout(context
                 }
             }
             for (i in 0..3) {
-                if (levelsImages!![i] != null && isImageContains(
-                        levelsImages!![i],
+                if (levelsImages[i] != null && isImageContains(
+                        levelsImages[i],
                         event.x.toInt(),
                         event.y.toInt()
                     ) && selectLevelPart * 4 + i < levels.size
@@ -3294,15 +3294,15 @@ class GameView(context: Context?, attrs: AttributeSet?) : RelativeLayout(context
     var selectLevelsMask: ImageView? = null
     
     private fun clearSelectLevels() {
-        for (i in levelsImages!!.indices) {
-            recycleBitmap(levelsImages!![i])
+        for (i in levelsImages.indices) {
+            recycleBitmap(levelsImages[i])
         }
         recycleBitmap(selectLevelsBackground)
         recycleBitmap(selectLevelsMask)
         recycleBitmap(shtoraImageView)
     }
 
-    private fun startSelectLevel(nextScreen: Int) {
+    fun startSelectLevel(nextScreen: Int) {
         if (nextScreen == 3) {
             shtoraImageView = ImageView(Owner)
             addView(shtoraImageView)
@@ -3991,7 +3991,7 @@ class GameView(context: Context?, attrs: AttributeSet?) : RelativeLayout(context
 
     var babochkaImageView: ImageView? = null
     var shtoraImageView: ImageView? = null
-    private fun initMainMenu() {
+    fun initMainMenu() {
         this.setBackgroundResource(R.drawable.start_fone2)
         val cvetyImul: Float = Owner.viewHeight / 720f
         val starImul: Float = Owner.viewWidth / 1024f
@@ -4428,7 +4428,8 @@ class GameView(context: Context?, attrs: AttributeSet?) : RelativeLayout(context
             if (allClear) {
                 for (i in listObjects.indices) {
                     listObjects[i]?.apply {
-                        if (isVisible) setBlinkView(this)
+                        if (isVisible)
+                            setBlinkView(this)
                     }
                 }
                 val handlerTimer = Handler()
@@ -4456,36 +4457,33 @@ class GameView(context: Context?, attrs: AttributeSet?) : RelativeLayout(context
     @SuppressLint("UseKtx")
     fun checkCompleteLevelWithGoodSound(num: Int) {
         var allClear = true
-        for (i in listObjects.indices) {
-            if (listObjects[i]?.isSetOnPosition != true) {
+        listObjects.forEach {
+            if (it?.isSetOnPosition != true) {
                 allClear = false
             }
         }
-        run {
-            run {
-                val resNum = mRnd.nextInt(goodStep.size)
-                soundFromResId(goodStep[resNum])
-            }
-            if (allClear) {
-                for (i in listObjects.indices) {
-                    listObjects[i]?.apply {
-                        if (isVisible)
-                            setBlinkView(this)
-                    }
+        val resNum = mRnd.nextInt(goodStep.size)
+        soundFromResId(goodStep[resNum])
+        if (allClear) {
+            listObjects.forEach {
+                it?.apply {
+                    if (isVisible)
+                        setBlinkView(this)
                 }
-                val handlerTimer = Handler()
-                handlerTimer.postDelayed({
-                    stageComplete()
-                    currentScreenType = 2
-                }, 3000)
-                hideAnimation(glassView)
-            } else {
-                children.forEach {
-                    (it as? MovingImageView)?.let { miv ->
-                        if (miv.isSetOnPosition) {
-                            removeView(miv)
-                            addView(miv)
-                        }
+            }
+            val handlerTimer = Handler()
+            handlerTimer.postDelayed({
+                stageComplete()
+                currentScreenType = 2
+            }, 3000)
+            hideAnimation(glassView)
+        } else {
+            children.forEach {
+                (it as? MovingImageView)?.apply {
+                    if (!isSetOnPosition) {
+                        bringToFront()
+                        //removeView(miv)
+                        //addView(miv)
                     }
                 }
             }

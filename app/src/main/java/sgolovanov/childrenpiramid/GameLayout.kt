@@ -85,6 +85,6 @@ abstract class GameLayout(context: Context?) : RelativeLayout(context) {
     abstract fun LoadLevel()
 
     fun Play(resource: Int, is_looping: Boolean) {
-        Owner.Play(resource)
+        Owner.play(resource)
     }
 }

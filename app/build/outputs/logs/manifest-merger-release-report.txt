@@ -1,0 +1,620 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:2:1-32:12
+MERGED from [androidx.databinding:viewbinding:9.3.2] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/336e96ecc3a92c64bceb432444691694/transformed/jetified-viewbinding-9.3.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.2] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7676525aae54810ae5f0fe6b9f107660/transformed/constraintlayout-2.2.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:2:1-47:12
+MERGED from [com.github.grapesnberries:curlloggerinterceptor:0.1] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/2e8b8452942211017063ade512353858/transformed/jetified-curlloggerinterceptor-0.1/AndroidManifest.xml:2:1-17:12
+MERGED from [androidx.appcompat:appcompat-resources:1.8.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7cc35838d8d7b8493ba9908fcf08cca2/transformed/jetified-appcompat-resources-1.8.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat:1.8.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/bd8cb3dc90a707ceb1c07e5caa06f42c/transformed/appcompat-1.8.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8889c0e32532f3dc1581a123bf1b8cef/transformed/recyclerview-1.3.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4135116963e61e0fb00f8a1879dfe105/transformed/jetified-viewpager2-1.1.0-beta02/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:2:1-43:12
+MERGED from [io.appmetrica.analytics:analytics-appsetid:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/d282e106da377876baf95f25818fc195/transformed/jetified-analytics-appsetid-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-appset:16.1.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c270fec3a77d017e44f9902c1b0c044f/transformed/jetified-play-services-appset-16.1.0/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/bed35276742de8ab64a2dcd83110821a/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/9dfa7bed4304e5822c69b503d3008451/transformed/jetified-play-services-tasks-18.2.0/AndroidManifest.xml:2:1-5:12
+MERGED from [io.appmetrica.analytics:analytics-identifiers:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/6561a68456ca55032fba0231ef07c8b7/transformed/jetified-analytics-identifiers-8.5.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.1.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/945beb274c319ca72f29c1d1fee2d1d4/transformed/jetified-play-services-ads-identifier-18.1.0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7c411f43ec83142c2ef8221988040bfe/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.fragment:fragment:1.5.4] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/de5231c22a7f2db38d199497969a411f/transformed/fragment-1.5.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.8.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/5ac8acfdef38fff8e6b8de042dfa964c/transformed/jetified-activity-1.8.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7eceafe0b746bc62c4168122797951c0/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/47041d4c35f320bc2d0428677d2e2aef/transformed/jetified-emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/722b9042883999977ea87112cf23475c/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.transition:transition:1.4.1] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8e911b91988b90c5cbe42117b6c4f3e5/transformed/transition-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/38f6a77d4ef85446565335c9709a313a/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4ff485ed3c0d1172010201ac5869afde/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c70086d34c61b02cc6f21ace08560abd/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/398bbde2fc3415b5df282be7c71e88e6/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/57b21cd091c492939d0439b6a9b239c7/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8694103da7b47d9a1013411ccde040af/transformed/core-1.19.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/d020df5233f1e19f12b17aa6b1ed237d/transformed/jetified-customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/b397ba073205de01e38279d578400d73/transformed/jetified-lifecycle-livedata-core-ktx-2.11.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8c73d26012a639da06da7f4ffdfaa63f/transformed/lifecycle-viewmodel-2.11.0/AndroidManifest.xml:2:1-5:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/882131d7d32f2e0519c6d14dc4c6495a/transformed/jetified-lifecycle-viewmodel/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-android:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c8a6ae8427cf28e373fc7dc9c8d01cfc/transformed/jetified-savedstate/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/397f487114cb38800b80b7e91baa37b7/transformed/jetified-lifecycle-runtime/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/916a2707acf9cbb25c27fee96c007a6a/transformed/lifecycle-livedata-2.11.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c12ed1d647402451748aaff6508899df/transformed/jetified-lifecycle-process-2.11.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/aab23c943c814b97c005307eb7725c14/transformed/lifecycle-livedata-core-2.11.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7e3bd4ca16d85a5f87a811b6126bd395/transformed/jetified-lifecycle-runtime-ktx/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/df75c194703bc03e71f0ec9e76fb2113/transformed/jetified-lifecycle-viewmodel-savedstate/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/583e7e1f803f0271199eab24a6ced3b1/transformed/jetified-core-ktx-1.19.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.yandex.varioqub:appmetrica-adapter:0.6.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/0e32cc28e2988b18c9a5cf1d45fde808/transformed/jetified-appmetrica-adapter-0.6.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.yandex.varioqub:analytic-adapter:0.6.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/195f098d717893cad9376773805c7271/transformed/jetified-analytic-adapter-0.6.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.yandex.varioqub:proto:0.6.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/bc37025d19937005f4a7fb3e0d9673d4/transformed/jetified-proto-0.6.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/1a545c2a3f2c1ef4b44034d330ad1171/transformed/jetified-annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core-viewtree:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/34afb98702fee929041189c747c8dd93/transformed/jetified-core-viewtree-1.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-id-sync:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/ce9d5d10e308bca64aeda32391076ace/transformed/jetified-analytics-id-sync-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-network-tasks:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/442aed7a88da364a78e217fe7937cfa7/transformed/jetified-analytics-network-tasks-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-network:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/fc6e5bc151ed5b9b32a217d871844193/transformed/jetified-analytics-network-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-network-okhttp:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/ee659bd4629235fb93f33549abd77a14/transformed/jetified-analytics-network-okhttp-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.squareup.okhttp3:okhttp-android:5.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/886119093d148b4818b809cc5b146a54/transformed/jetified-okhttp/AndroidManifest.xml:2:1-22:12
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/60e92ae48e3ca62e4520d35b04b9cd24/transformed/jetified-analytics-ad-revenue-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-billing:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/9258199c264a0a9f92e426b3e6edbed1/transformed/jetified-analytics-billing-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-location:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/3a3a74cf98aed371191f5ec4356ff632/transformed/jetified-analytics-location-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-remote-permissions:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a6e3a3dd0d2bd571b8a6c5722f0aa913/transformed/jetified-analytics-remote-permissions-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-reporter-extension:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/941866747291050c3ecaa00637e56815/transformed/jetified-analytics-reporter-extension-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-screenshot:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/abb30dfeffc7f2fa5eee548af72303ad/transformed/jetified-analytics-screenshot-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-admob-v23:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55ee7c49aec711d0bbef75c5e821dfa2/transformed/jetified-analytics-ad-revenue-admob-v23-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-applovin-v12:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/517df0539deb9adaa5b504a2ebeff68a/transformed/jetified-analytics-ad-revenue-applovin-v12-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-applovin-v12-auto:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7b390cb5d9464c5163b25b4842c34b22/transformed/jetified-analytics-ad-revenue-applovin-v12-auto-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-fyber-v3:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/dc2c838b0e46efa4fa10438a6d84525d/transformed/jetified-analytics-ad-revenue-fyber-v3-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-ironsource-v7:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/2a9c04fdee82d3e03ce49c8ceb2edc7a/transformed/jetified-analytics-ad-revenue-ironsource-v7-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-ironsource-v9:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/eb99068c108b6035eba4365056005713/transformed/jetified-analytics-ad-revenue-ironsource-v9-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-other:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/f952990ebd89cdfc09a4a3db9167d1f1/transformed/jetified-analytics-ad-revenue-other-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-modules-api:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4b020f2b41f5ed029e3ba24f6812c537/transformed/jetified-analytics-modules-api-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-product-flow:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/44038452ce64044bb676095123199682/transformed/jetified-analytics-product-flow-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-billing-v6:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c6a5220cd33cd1c0e47c80991fd7bbd6/transformed/jetified-analytics-billing-v6-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-billing-v8:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/bd71f54853e5b96a58523c2f772b6609/transformed/jetified-analytics-billing-v8-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-billing-interface:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/33cd29926bbca0710b50a6969c27916f/transformed/jetified-analytics-billing-interface-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-core-utils:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/0d05458f9c52ceea250b1235da9c6e68/transformed/jetified-analytics-core-utils-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-location-api:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/2ab3ef3fa344ca1a4af27ccc3f53c3f8/transformed/jetified-analytics-location-api-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-ndkcrashes-api:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4c753312dc317eda7f9a07959d6dde1d/transformed/jetified-analytics-ndkcrashes-api-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-gpllibrary:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4791ba8ab09e910860d7d23bc5929bc8/transformed/jetified-analytics-gpllibrary-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-logger:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/14e4d3ab75bf433a9d543921145fa3b0/transformed/jetified-analytics-logger-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-core-api:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/62a36e00b5c850596bd84057cd4784cf/transformed/jetified-analytics-core-api-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-proto:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/cfff4260b61f3efdfa6bcaf86402bdb9/transformed/jetified-analytics-proto-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/13d761e1eeb516898aab54500bb579f0/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/65f6f85a68b257814a9422bf3f2fe38a/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.startup:startup-runtime:1.2.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4ebd0759a98a77e2e18b4856681d4386/transformed/jetified-startup-runtime-1.2.0/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a111950c0c0e6e934bff6a8fe52afc8f/transformed/jetified-tracing-1.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/30c25691eaf9f466e6bb046becd8119c/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/112f16990c961a74c8fc3f233cf0bf6c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [io.appmetrica.analytics:analytics-common-logger:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/d9bbaea98678534b334478970678dad1/transformed/jetified-analytics-common-logger-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.appmetrica.analytics:analytics-network-api:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/3637ea6128daffae47104ec62b18bf7f/transformed/jetified-analytics-network-api-8.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.caverock:androidsvg-aar:1.4] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/64e7538c1eca361aca68715e25995d22/transformed/jetified-androidsvg-aar-1.4/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.installreferrer:installreferrer:2.2] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/ca59e87b37948eb945404fc274fb99dd/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:2:1-13:12
+	package
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:4:5-41
+		INJECTED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:5:5-35
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:7:5-65
+	android:name
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:7:22-63
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:8:5-68
+	android:name
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:8:22-65
+uses-permission#android.permission.INTERNET
+ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:9:5-67
+MERGED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:8:5-67
+MERGED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:8:5-67
+MERGED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:9:5-67
+MERGED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:9:5-67
+MERGED from [com.squareup.okhttp3:okhttp-android:5.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/886119093d148b4818b809cc5b146a54/transformed/jetified-okhttp/AndroidManifest.xml:8:5-67
+MERGED from [com.squareup.okhttp3:okhttp-android:5.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/886119093d148b4818b809cc5b146a54/transformed/jetified-okhttp/AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:9:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:10:5-78
+MERGED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:9:5-79
+MERGED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:9:5-79
+MERGED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:10:5-79
+MERGED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:10:22-76
+uses-permission#com.android.vending.CHECK_LICENSE
+ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:11:5-73
+	android:name
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:11:22-70
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:12:5-75
+	android:name
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:12:22-73
+uses-feature#android.hardware.telephony
+ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:13:5-88
+	android:required
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:13:61-85
+	android:name
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:13:19-60
+application
+ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:15:5-31:19
+INJECTED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:15:5-31:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.2] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7676525aae54810ae5f0fe6b9f107660/transformed/constraintlayout-2.2.2/AndroidManifest.xml:7:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.2] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7676525aae54810ae5f0fe6b9f107660/transformed/constraintlayout-2.2.2/AndroidManifest.xml:7:5-20
+MERGED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:16:5-45:19
+MERGED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:16:5-45:19
+MERGED from [com.github.grapesnberries:curlloggerinterceptor:0.1] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/2e8b8452942211017063ade512353858/transformed/jetified-curlloggerinterceptor-0.1/AndroidManifest.xml:11:5-15:19
+MERGED from [com.github.grapesnberries:curlloggerinterceptor:0.1] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/2e8b8452942211017063ade512353858/transformed/jetified-curlloggerinterceptor-0.1/AndroidManifest.xml:11:5-15:19
+MERGED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:18:5-41:19
+MERGED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:18:5-41:19
+MERGED from [com.google.android.gms:play-services-appset:16.1.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c270fec3a77d017e44f9902c1b0c044f/transformed/jetified-play-services-appset-16.1.0/AndroidManifest.xml:6:5-20
+MERGED from [com.google.android.gms:play-services-appset:16.1.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c270fec3a77d017e44f9902c1b0c044f/transformed/jetified-play-services-appset-16.1.0/AndroidManifest.xml:6:5-20
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/bed35276742de8ab64a2dcd83110821a/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:4:5-6:19
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/bed35276742de8ab64a2dcd83110821a/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:4:5-6:19
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/9dfa7bed4304e5822c69b503d3008451/transformed/jetified-play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/9dfa7bed4304e5822c69b503d3008451/transformed/jetified-play-services-tasks-18.2.0/AndroidManifest.xml:4:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.1.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/945beb274c319ca72f29c1d1fee2d1d4/transformed/jetified-play-services-ads-identifier-18.1.0/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.1.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/945beb274c319ca72f29c1d1fee2d1d4/transformed/jetified-play-services-ads-identifier-18.1.0/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7c411f43ec83142c2ef8221988040bfe/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7c411f43ec83142c2ef8221988040bfe/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:5:5-7:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/722b9042883999977ea87112cf23475c/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/722b9042883999977ea87112cf23475c/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8694103da7b47d9a1013411ccde040af/transformed/core-1.19.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8694103da7b47d9a1013411ccde040af/transformed/core-1.19.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c12ed1d647402451748aaff6508899df/transformed/jetified-lifecycle-process-2.11.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c12ed1d647402451748aaff6508899df/transformed/jetified-lifecycle-process-2.11.0/AndroidManifest.xml:23:5-33:19
+MERGED from [com.squareup.okhttp3:okhttp-android:5.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/886119093d148b4818b809cc5b146a54/transformed/jetified-okhttp/AndroidManifest.xml:10:5-20:19
+MERGED from [com.squareup.okhttp3:okhttp-android:5.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/886119093d148b4818b809cc5b146a54/transformed/jetified-okhttp/AndroidManifest.xml:10:5-20:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.2.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4ebd0759a98a77e2e18b4856681d4386/transformed/jetified-startup-runtime-1.2.0/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.startup:startup-runtime:1.2.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4ebd0759a98a77e2e18b4856681d4386/transformed/jetified-startup-runtime-1.2.0/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/112f16990c961a74c8fc3f233cf0bf6c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/112f16990c961a74c8fc3f233cf0bf6c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [com.android.installreferrer:installreferrer:2.2] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/ca59e87b37948eb945404fc274fb99dd/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:11:5-20
+MERGED from [com.android.installreferrer:installreferrer:2.2] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/ca59e87b37948eb945404fc274fb99dd/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:11:5-20
+	android:extractNativeLibs
+		INJECTED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml
+	android:screenOrientation
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:20:9-46
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8694103da7b47d9a1013411ccde040af/transformed/core-1.19.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from [com.github.grapesnberries:curlloggerinterceptor:0.1] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/2e8b8452942211017063ade512353858/transformed/jetified-curlloggerinterceptor-0.1/AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:21:9-41
+	tools:ignore
+		ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:18:18-57
+	android:icon
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:19:9-45
+	android:allowBackup
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:18:9-35
+	android:theme
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:17:9-40
+	android:name
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:16:9-38
+activity#sgolovanov.childrenpiramid.GameActivity
+ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:22:9-30:20
+	android:screenOrientation
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:24:13-50
+	android:exported
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:23:13-36
+	android:name
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:25:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:26:13-29:29
+action#android.intent.action.MAIN
+ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:27:17-69
+	android:name
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:27:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:28:17-77
+	android:name
+		ADDED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml:28:27-74
+uses-sdk
+INJECTED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml
+INJECTED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:9.3.2] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/336e96ecc3a92c64bceb432444691694/transformed/jetified-viewbinding-9.3.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:9.3.2] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/336e96ecc3a92c64bceb432444691694/transformed/jetified-viewbinding-9.3.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.2] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7676525aae54810ae5f0fe6b9f107660/transformed/constraintlayout-2.2.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.2.2] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7676525aae54810ae5f0fe6b9f107660/transformed/constraintlayout-2.2.2/AndroidManifest.xml:5:5-44
+MERGED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:6:5-44
+MERGED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:6:5-44
+MERGED from [com.github.grapesnberries:curlloggerinterceptor:0.1] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/2e8b8452942211017063ade512353858/transformed/jetified-curlloggerinterceptor-0.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.grapesnberries:curlloggerinterceptor:0.1] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/2e8b8452942211017063ade512353858/transformed/jetified-curlloggerinterceptor-0.1/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat-resources:1.8.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7cc35838d8d7b8493ba9908fcf08cca2/transformed/jetified-appcompat-resources-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.8.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7cc35838d8d7b8493ba9908fcf08cca2/transformed/jetified-appcompat-resources-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.8.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/bd8cb3dc90a707ceb1c07e5caa06f42c/transformed/appcompat-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.8.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/bd8cb3dc90a707ceb1c07e5caa06f42c/transformed/appcompat-1.8.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8889c0e32532f3dc1581a123bf1b8cef/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8889c0e32532f3dc1581a123bf1b8cef/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4135116963e61e0fb00f8a1879dfe105/transformed/jetified-viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4135116963e61e0fb00f8a1879dfe105/transformed/jetified-viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:6:5-44
+MERGED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:6:5-44
+MERGED from [io.appmetrica.analytics:analytics-appsetid:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/d282e106da377876baf95f25818fc195/transformed/jetified-analytics-appsetid-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-appsetid:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/d282e106da377876baf95f25818fc195/transformed/jetified-analytics-appsetid-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-appset:16.1.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c270fec3a77d017e44f9902c1b0c044f/transformed/jetified-play-services-appset-16.1.0/AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.gms:play-services-appset:16.1.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c270fec3a77d017e44f9902c1b0c044f/transformed/jetified-play-services-appset-16.1.0/AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/bed35276742de8ab64a2dcd83110821a/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-base:18.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/bed35276742de8ab64a2dcd83110821a/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/9dfa7bed4304e5822c69b503d3008451/transformed/jetified-play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/9dfa7bed4304e5822c69b503d3008451/transformed/jetified-play-services-tasks-18.2.0/AndroidManifest.xml:3:5-44
+MERGED from [io.appmetrica.analytics:analytics-identifiers:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/6561a68456ca55032fba0231ef07c8b7/transformed/jetified-analytics-identifiers-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-identifiers:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/6561a68456ca55032fba0231ef07c8b7/transformed/jetified-analytics-identifiers-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.1.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/945beb274c319ca72f29c1d1fee2d1d4/transformed/jetified-play-services-ads-identifier-18.1.0/AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.1.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/945beb274c319ca72f29c1d1fee2d1d4/transformed/jetified-play-services-ads-identifier-18.1.0/AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7c411f43ec83142c2ef8221988040bfe/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7c411f43ec83142c2ef8221988040bfe/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:3:5-44
+MERGED from [androidx.fragment:fragment:1.5.4] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/de5231c22a7f2db38d199497969a411f/transformed/fragment-1.5.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.4] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/de5231c22a7f2db38d199497969a411f/transformed/fragment-1.5.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.8.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/5ac8acfdef38fff8e6b8de042dfa964c/transformed/jetified-activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/5ac8acfdef38fff8e6b8de042dfa964c/transformed/jetified-activity-1.8.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7eceafe0b746bc62c4168122797951c0/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7eceafe0b746bc62c4168122797951c0/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/47041d4c35f320bc2d0428677d2e2aef/transformed/jetified-emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/47041d4c35f320bc2d0428677d2e2aef/transformed/jetified-emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/722b9042883999977ea87112cf23475c/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/722b9042883999977ea87112cf23475c/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.transition:transition:1.4.1] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8e911b91988b90c5cbe42117b6c4f3e5/transformed/transition-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8e911b91988b90c5cbe42117b6c4f3e5/transformed/transition-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/38f6a77d4ef85446565335c9709a313a/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/38f6a77d4ef85446565335c9709a313a/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4ff485ed3c0d1172010201ac5869afde/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4ff485ed3c0d1172010201ac5869afde/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c70086d34c61b02cc6f21ace08560abd/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c70086d34c61b02cc6f21ace08560abd/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/398bbde2fc3415b5df282be7c71e88e6/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/398bbde2fc3415b5df282be7c71e88e6/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/57b21cd091c492939d0439b6a9b239c7/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/57b21cd091c492939d0439b6a9b239c7/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8694103da7b47d9a1013411ccde040af/transformed/core-1.19.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8694103da7b47d9a1013411ccde040af/transformed/core-1.19.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/d020df5233f1e19f12b17aa6b1ed237d/transformed/jetified-customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/d020df5233f1e19f12b17aa6b1ed237d/transformed/jetified-customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/b397ba073205de01e38279d578400d73/transformed/jetified-lifecycle-livedata-core-ktx-2.11.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/b397ba073205de01e38279d578400d73/transformed/jetified-lifecycle-livedata-core-ktx-2.11.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8c73d26012a639da06da7f4ffdfaa63f/transformed/lifecycle-viewmodel-2.11.0/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8c73d26012a639da06da7f4ffdfaa63f/transformed/lifecycle-viewmodel-2.11.0/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/882131d7d32f2e0519c6d14dc4c6495a/transformed/jetified-lifecycle-viewmodel/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/882131d7d32f2e0519c6d14dc4c6495a/transformed/jetified-lifecycle-viewmodel/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-android:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c8a6ae8427cf28e373fc7dc9c8d01cfc/transformed/jetified-savedstate/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-android:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c8a6ae8427cf28e373fc7dc9c8d01cfc/transformed/jetified-savedstate/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/397f487114cb38800b80b7e91baa37b7/transformed/jetified-lifecycle-runtime/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/397f487114cb38800b80b7e91baa37b7/transformed/jetified-lifecycle-runtime/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/916a2707acf9cbb25c27fee96c007a6a/transformed/lifecycle-livedata-2.11.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/916a2707acf9cbb25c27fee96c007a6a/transformed/lifecycle-livedata-2.11.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c12ed1d647402451748aaff6508899df/transformed/jetified-lifecycle-process-2.11.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c12ed1d647402451748aaff6508899df/transformed/jetified-lifecycle-process-2.11.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/aab23c943c814b97c005307eb7725c14/transformed/lifecycle-livedata-core-2.11.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/aab23c943c814b97c005307eb7725c14/transformed/lifecycle-livedata-core-2.11.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7e3bd4ca16d85a5f87a811b6126bd395/transformed/jetified-lifecycle-runtime-ktx/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7e3bd4ca16d85a5f87a811b6126bd395/transformed/jetified-lifecycle-runtime-ktx/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/df75c194703bc03e71f0ec9e76fb2113/transformed/jetified-lifecycle-viewmodel-savedstate/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/df75c194703bc03e71f0ec9e76fb2113/transformed/jetified-lifecycle-viewmodel-savedstate/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/583e7e1f803f0271199eab24a6ced3b1/transformed/jetified-core-ktx-1.19.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/583e7e1f803f0271199eab24a6ced3b1/transformed/jetified-core-ktx-1.19.0/AndroidManifest.xml:5:5-44
+MERGED from [com.yandex.varioqub:appmetrica-adapter:0.6.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/0e32cc28e2988b18c9a5cf1d45fde808/transformed/jetified-appmetrica-adapter-0.6.0/AndroidManifest.xml:5:5-44
+MERGED from [com.yandex.varioqub:appmetrica-adapter:0.6.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/0e32cc28e2988b18c9a5cf1d45fde808/transformed/jetified-appmetrica-adapter-0.6.0/AndroidManifest.xml:5:5-44
+MERGED from [com.yandex.varioqub:analytic-adapter:0.6.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/195f098d717893cad9376773805c7271/transformed/jetified-analytic-adapter-0.6.0/AndroidManifest.xml:5:5-44
+MERGED from [com.yandex.varioqub:analytic-adapter:0.6.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/195f098d717893cad9376773805c7271/transformed/jetified-analytic-adapter-0.6.0/AndroidManifest.xml:5:5-44
+MERGED from [com.yandex.varioqub:proto:0.6.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/bc37025d19937005f4a7fb3e0d9673d4/transformed/jetified-proto-0.6.0/AndroidManifest.xml:5:5-44
+MERGED from [com.yandex.varioqub:proto:0.6.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/bc37025d19937005f4a7fb3e0d9673d4/transformed/jetified-proto-0.6.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/1a545c2a3f2c1ef4b44034d330ad1171/transformed/jetified-annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/1a545c2a3f2c1ef4b44034d330ad1171/transformed/jetified-annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/34afb98702fee929041189c747c8dd93/transformed/jetified-core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/34afb98702fee929041189c747c8dd93/transformed/jetified-core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-id-sync:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/ce9d5d10e308bca64aeda32391076ace/transformed/jetified-analytics-id-sync-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-id-sync:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/ce9d5d10e308bca64aeda32391076ace/transformed/jetified-analytics-id-sync-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-network-tasks:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/442aed7a88da364a78e217fe7937cfa7/transformed/jetified-analytics-network-tasks-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-network-tasks:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/442aed7a88da364a78e217fe7937cfa7/transformed/jetified-analytics-network-tasks-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-network:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/fc6e5bc151ed5b9b32a217d871844193/transformed/jetified-analytics-network-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-network:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/fc6e5bc151ed5b9b32a217d871844193/transformed/jetified-analytics-network-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-network-okhttp:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/ee659bd4629235fb93f33549abd77a14/transformed/jetified-analytics-network-okhttp-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-network-okhttp:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/ee659bd4629235fb93f33549abd77a14/transformed/jetified-analytics-network-okhttp-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.okhttp3:okhttp-android:5.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/886119093d148b4818b809cc5b146a54/transformed/jetified-okhttp/AndroidManifest.xml:6:5-44
+MERGED from [com.squareup.okhttp3:okhttp-android:5.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/886119093d148b4818b809cc5b146a54/transformed/jetified-okhttp/AndroidManifest.xml:6:5-44
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/60e92ae48e3ca62e4520d35b04b9cd24/transformed/jetified-analytics-ad-revenue-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/60e92ae48e3ca62e4520d35b04b9cd24/transformed/jetified-analytics-ad-revenue-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-billing:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/9258199c264a0a9f92e426b3e6edbed1/transformed/jetified-analytics-billing-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-billing:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/9258199c264a0a9f92e426b3e6edbed1/transformed/jetified-analytics-billing-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-location:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/3a3a74cf98aed371191f5ec4356ff632/transformed/jetified-analytics-location-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-location:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/3a3a74cf98aed371191f5ec4356ff632/transformed/jetified-analytics-location-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-remote-permissions:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a6e3a3dd0d2bd571b8a6c5722f0aa913/transformed/jetified-analytics-remote-permissions-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-remote-permissions:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a6e3a3dd0d2bd571b8a6c5722f0aa913/transformed/jetified-analytics-remote-permissions-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-reporter-extension:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/941866747291050c3ecaa00637e56815/transformed/jetified-analytics-reporter-extension-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-reporter-extension:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/941866747291050c3ecaa00637e56815/transformed/jetified-analytics-reporter-extension-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-screenshot:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/abb30dfeffc7f2fa5eee548af72303ad/transformed/jetified-analytics-screenshot-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-screenshot:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/abb30dfeffc7f2fa5eee548af72303ad/transformed/jetified-analytics-screenshot-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-admob-v23:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55ee7c49aec711d0bbef75c5e821dfa2/transformed/jetified-analytics-ad-revenue-admob-v23-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-admob-v23:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55ee7c49aec711d0bbef75c5e821dfa2/transformed/jetified-analytics-ad-revenue-admob-v23-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-applovin-v12:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/517df0539deb9adaa5b504a2ebeff68a/transformed/jetified-analytics-ad-revenue-applovin-v12-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-applovin-v12:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/517df0539deb9adaa5b504a2ebeff68a/transformed/jetified-analytics-ad-revenue-applovin-v12-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-applovin-v12-auto:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7b390cb5d9464c5163b25b4842c34b22/transformed/jetified-analytics-ad-revenue-applovin-v12-auto-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-applovin-v12-auto:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7b390cb5d9464c5163b25b4842c34b22/transformed/jetified-analytics-ad-revenue-applovin-v12-auto-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-fyber-v3:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/dc2c838b0e46efa4fa10438a6d84525d/transformed/jetified-analytics-ad-revenue-fyber-v3-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-fyber-v3:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/dc2c838b0e46efa4fa10438a6d84525d/transformed/jetified-analytics-ad-revenue-fyber-v3-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-ironsource-v7:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/2a9c04fdee82d3e03ce49c8ceb2edc7a/transformed/jetified-analytics-ad-revenue-ironsource-v7-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-ironsource-v7:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/2a9c04fdee82d3e03ce49c8ceb2edc7a/transformed/jetified-analytics-ad-revenue-ironsource-v7-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-ironsource-v9:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/eb99068c108b6035eba4365056005713/transformed/jetified-analytics-ad-revenue-ironsource-v9-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-ironsource-v9:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/eb99068c108b6035eba4365056005713/transformed/jetified-analytics-ad-revenue-ironsource-v9-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-other:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/f952990ebd89cdfc09a4a3db9167d1f1/transformed/jetified-analytics-ad-revenue-other-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-ad-revenue-other:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/f952990ebd89cdfc09a4a3db9167d1f1/transformed/jetified-analytics-ad-revenue-other-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-modules-api:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4b020f2b41f5ed029e3ba24f6812c537/transformed/jetified-analytics-modules-api-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-modules-api:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4b020f2b41f5ed029e3ba24f6812c537/transformed/jetified-analytics-modules-api-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-product-flow:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/44038452ce64044bb676095123199682/transformed/jetified-analytics-product-flow-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-product-flow:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/44038452ce64044bb676095123199682/transformed/jetified-analytics-product-flow-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-billing-v6:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c6a5220cd33cd1c0e47c80991fd7bbd6/transformed/jetified-analytics-billing-v6-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-billing-v6:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c6a5220cd33cd1c0e47c80991fd7bbd6/transformed/jetified-analytics-billing-v6-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-billing-v8:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/bd71f54853e5b96a58523c2f772b6609/transformed/jetified-analytics-billing-v8-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-billing-v8:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/bd71f54853e5b96a58523c2f772b6609/transformed/jetified-analytics-billing-v8-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-billing-interface:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/33cd29926bbca0710b50a6969c27916f/transformed/jetified-analytics-billing-interface-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-billing-interface:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/33cd29926bbca0710b50a6969c27916f/transformed/jetified-analytics-billing-interface-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-core-utils:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/0d05458f9c52ceea250b1235da9c6e68/transformed/jetified-analytics-core-utils-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-core-utils:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/0d05458f9c52ceea250b1235da9c6e68/transformed/jetified-analytics-core-utils-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-location-api:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/2ab3ef3fa344ca1a4af27ccc3f53c3f8/transformed/jetified-analytics-location-api-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-location-api:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/2ab3ef3fa344ca1a4af27ccc3f53c3f8/transformed/jetified-analytics-location-api-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-ndkcrashes-api:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4c753312dc317eda7f9a07959d6dde1d/transformed/jetified-analytics-ndkcrashes-api-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-ndkcrashes-api:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4c753312dc317eda7f9a07959d6dde1d/transformed/jetified-analytics-ndkcrashes-api-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-gpllibrary:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4791ba8ab09e910860d7d23bc5929bc8/transformed/jetified-analytics-gpllibrary-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-gpllibrary:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4791ba8ab09e910860d7d23bc5929bc8/transformed/jetified-analytics-gpllibrary-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-logger:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/14e4d3ab75bf433a9d543921145fa3b0/transformed/jetified-analytics-logger-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-logger:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/14e4d3ab75bf433a9d543921145fa3b0/transformed/jetified-analytics-logger-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-core-api:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/62a36e00b5c850596bd84057cd4784cf/transformed/jetified-analytics-core-api-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-core-api:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/62a36e00b5c850596bd84057cd4784cf/transformed/jetified-analytics-core-api-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-proto:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/cfff4260b61f3efdfa6bcaf86402bdb9/transformed/jetified-analytics-proto-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-proto:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/cfff4260b61f3efdfa6bcaf86402bdb9/transformed/jetified-analytics-proto-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/13d761e1eeb516898aab54500bb579f0/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/13d761e1eeb516898aab54500bb579f0/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/65f6f85a68b257814a9422bf3f2fe38a/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/65f6f85a68b257814a9422bf3f2fe38a/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.startup:startup-runtime:1.2.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4ebd0759a98a77e2e18b4856681d4386/transformed/jetified-startup-runtime-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.2.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4ebd0759a98a77e2e18b4856681d4386/transformed/jetified-startup-runtime-1.2.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a111950c0c0e6e934bff6a8fe52afc8f/transformed/jetified-tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a111950c0c0e6e934bff6a8fe52afc8f/transformed/jetified-tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/30c25691eaf9f466e6bb046becd8119c/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/30c25691eaf9f466e6bb046becd8119c/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/112f16990c961a74c8fc3f233cf0bf6c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/112f16990c961a74c8fc3f233cf0bf6c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [io.appmetrica.analytics:analytics-common-logger:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/d9bbaea98678534b334478970678dad1/transformed/jetified-analytics-common-logger-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-common-logger:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/d9bbaea98678534b334478970678dad1/transformed/jetified-analytics-common-logger-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-network-api:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/3637ea6128daffae47104ec62b18bf7f/transformed/jetified-analytics-network-api-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [io.appmetrica.analytics:analytics-network-api:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/3637ea6128daffae47104ec62b18bf7f/transformed/jetified-analytics-network-api-8.5.0/AndroidManifest.xml:5:5-44
+MERGED from [com.caverock:androidsvg-aar:1.4] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/64e7538c1eca361aca68715e25995d22/transformed/jetified-androidsvg-aar-1.4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.caverock:androidsvg-aar:1.4] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/64e7538c1eca361aca68715e25995d22/transformed/jetified-androidsvg-aar-1.4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.installreferrer:installreferrer:2.2] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/ca59e87b37948eb945404fc274fb99dd/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.installreferrer:installreferrer:2.2] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/ca59e87b37948eb945404fc274fb99dd/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:5:5-7:41
+	android:targetSdkVersion
+		INJECTED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/sergeygolovanov/AndroidStudioProjects/soobrazhalka/app/src/main/AndroidManifest.xml
+uses-permission#com.google.android.gms.permission.AD_ID
+ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:10:5-79
+MERGED from [io.appmetrica.analytics:analytics-identifiers:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/6561a68456ca55032fba0231ef07c8b7/transformed/jetified-analytics-identifiers-8.5.0/AndroidManifest.xml:8:5-79
+MERGED from [io.appmetrica.analytics:analytics-identifiers:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/6561a68456ca55032fba0231ef07c8b7/transformed/jetified-analytics-identifiers-8.5.0/AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.1.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/945beb274c319ca72f29c1d1fee2d1d4/transformed/jetified-play-services-ads-identifier-18.1.0/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.1.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/945beb274c319ca72f29c1d1fee2d1d4/transformed/jetified-play-services-ads-identifier-18.1.0/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:10:22-76
+queries
+ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:12:5-14:15
+MERGED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:12:5-16:15
+MERGED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:12:5-16:15
+package#com.android.vending
+ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:13:9-55
+	android:name
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:13:18-52
+activity#com.yandex.mobile.ads.common.AdActivity
+ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:17:9-22:46
+	tools:ignore
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:22:13-43
+	android:configChanges
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:19:13-130
+	android:theme
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:21:13-70
+	android:enableOnBackInvokedCallback
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:20:13-56
+	android:name
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:18:13-67
+provider#com.yandex.mobile.ads.core.initializer.YandexAdsInitializeProvider
+ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:24:9-27:40
+	android:authorities
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:26:13-79
+	android:exported
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:25:13-94
+activity#com.yandex.mobile.ads.features.debugpanel.ui.IntegrationInspectorActivity
+ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:29:9-34:46
+	android:exported
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:32:13-37
+	tools:ignore
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:34:13-43
+	android:theme
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:33:13-51
+	android:enableOnBackInvokedCallback
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:31:13-56
+	android:name
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:30:13-101
+provider#com.yandex.mobile.ads.features.debugpanel.data.local.DebugPanelFileProvider
+ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:36:9-44:20
+	android:grantUriPermissions
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:40:13-47
+	android:authorities
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:38:13-91
+	android:exported
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:37:13-103
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:41:13-43:66
+	android:resource
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:43:17-63
+	android:name
+		ADDED from [com.yandex.android:mobileads:8.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/942934b0992e575c91669242f12664ff/transformed/jetified-mobileads-8.4.0/AndroidManifest.xml:42:17-67
+intent#action:name:ru.vk.store.sdk.install.referrer.InstallReferrerProvider
+ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:13:9-15:18
+action#ru.vk.store.sdk.install.referrer.InstallReferrerProvider
+ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:14:13-95
+	android:name
+		ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:14:21-92
+service#io.appmetrica.analytics.internal.AppMetricaService
+ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:21:9-32:19
+	android:enabled
+		ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:23:13-35
+	android:exported
+		ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:22:13-78
+intent-filter#action:name:io.appmetrica.analytics.IAppMetricaService+category:name:android.intent.category.DEFAULT+data:scheme:appmetrica
+ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:25:13-31:29
+category#android.intent.category.DEFAULT
+ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:26:17-76
+	android:name
+		ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:26:27-73
+action#io.appmetrica.analytics.IAppMetricaService
+ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:28:17-85
+	android:name
+		ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:28:25-82
+data
+ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:30:17-53
+	android:scheme
+		ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:30:23-50
+provider#io.appmetrica.analytics.internal.PreloadInfoContentProvider
+ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:35:9-40:54
+	android:enabled
+		ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:38:13-35
+	android:authorities
+		ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:37:13-81
+	android:exported
+		ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:39:13-36
+	tools:ignore
+		ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:40:13-51
+	android:name
+		ADDED from [io.appmetrica.analytics:analytics:8.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/a8c0dd0d86ae254427480bb85153ef5e/transformed/jetified-analytics-8.5.0/AndroidManifest.xml:36:13-87
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/bed35276742de8ab64a2dcd83110821a/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/bed35276742de8ab64a2dcd83110821a/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/bed35276742de8ab64a2dcd83110821a/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/bed35276742de8ab64a2dcd83110821a/transformed/jetified-play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7c411f43ec83142c2ef8221988040bfe/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7c411f43ec83142c2ef8221988040bfe/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/7c411f43ec83142c2ef8221988040bfe/transformed/jetified-play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/722b9042883999977ea87112cf23475c/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c12ed1d647402451748aaff6508899df/transformed/jetified-lifecycle-process-2.11.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c12ed1d647402451748aaff6508899df/transformed/jetified-lifecycle-process-2.11.0/AndroidManifest.xml:24:9-32:20
+MERGED from [com.squareup.okhttp3:okhttp-android:5.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/886119093d148b4818b809cc5b146a54/transformed/jetified-okhttp/AndroidManifest.xml:11:9-19:20
+MERGED from [com.squareup.okhttp3:okhttp-android:5.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/886119093d148b4818b809cc5b146a54/transformed/jetified-okhttp/AndroidManifest.xml:11:9-19:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.2.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4ebd0759a98a77e2e18b4856681d4386/transformed/jetified-startup-runtime-1.2.0/AndroidManifest.xml:24:9-28:34
+MERGED from [androidx.startup:startup-runtime:1.2.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/4ebd0759a98a77e2e18b4856681d4386/transformed/jetified-startup-runtime-1.2.0/AndroidManifest.xml:24:9-28:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/722b9042883999977ea87112cf23475c/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/722b9042883999977ea87112cf23475c/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/722b9042883999977ea87112cf23475c/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/722b9042883999977ea87112cf23475c/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/722b9042883999977ea87112cf23475c/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/722b9042883999977ea87112cf23475c/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/722b9042883999977ea87112cf23475c/transformed/jetified-emoji2-1.3.0/AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8694103da7b47d9a1013411ccde040af/transformed/core-1.19.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8694103da7b47d9a1013411ccde040af/transformed/core-1.19.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8694103da7b47d9a1013411ccde040af/transformed/core-1.19.0/AndroidManifest.xml:23:9-81
+permission#sgolovanov.childrenpiramid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8694103da7b47d9a1013411ccde040af/transformed/core-1.19.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8694103da7b47d9a1013411ccde040af/transformed/core-1.19.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8694103da7b47d9a1013411ccde040af/transformed/core-1.19.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8694103da7b47d9a1013411ccde040af/transformed/core-1.19.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8694103da7b47d9a1013411ccde040af/transformed/core-1.19.0/AndroidManifest.xml:26:22-94
+uses-permission#sgolovanov.childrenpiramid.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8694103da7b47d9a1013411ccde040af/transformed/core-1.19.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.19.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/8694103da7b47d9a1013411ccde040af/transformed/core-1.19.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c12ed1d647402451748aaff6508899df/transformed/jetified-lifecycle-process-2.11.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c12ed1d647402451748aaff6508899df/transformed/jetified-lifecycle-process-2.11.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.11.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/c12ed1d647402451748aaff6508899df/transformed/jetified-lifecycle-process-2.11.0/AndroidManifest.xml:30:17-78
+meta-data#okhttp3.internal.platform.PlatformInitializer
+ADDED from [com.squareup.okhttp3:okhttp-android:5.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/886119093d148b4818b809cc5b146a54/transformed/jetified-okhttp/AndroidManifest.xml:16:13-18:52
+	android:value
+		ADDED from [com.squareup.okhttp3:okhttp-android:5.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/886119093d148b4818b809cc5b146a54/transformed/jetified-okhttp/AndroidManifest.xml:18:17-49
+	android:name
+		ADDED from [com.squareup.okhttp3:okhttp-android:5.5.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/886119093d148b4818b809cc5b146a54/transformed/jetified-okhttp/AndroidManifest.xml:17:17-77
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/55079b9aeb551f24166532ffd46bea72/transformed/jetified-profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.android.installreferrer:installreferrer:2.2] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/ca59e87b37948eb945404fc274fb99dd/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:9:5-110
+	android:name
+		ADDED from [com.android.installreferrer:installreferrer:2.2] /Users/sergeygolovanov/.gradle/caches/9.5.0/transforms/ca59e87b37948eb945404fc274fb99dd/transformed/jetified-installreferrer-2.2/AndroidManifest.xml:9:22-107

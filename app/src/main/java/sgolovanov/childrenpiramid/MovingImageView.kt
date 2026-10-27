@@ -22,34 +22,20 @@ open class MovingImageView(
     context: Context,
     var mGameView: GameView
 ) : View(context), OnTouchListener {
-    @JvmField
     var mLastTouchX: Float = 0f
-    @JvmField
     var mLastTouchY: Float = 0f
-    @JvmField
     var mClearObject: ShadowImageView? = null
-    @JvmField
     var isSetOnPosition: Boolean = false
-    @JvmField
     var mObjectNumber: Int = 0
-    var invisiblePointsNum: Int = 0
-    @JvmField
     var bitmap: Bitmap? = null
-    @JvmField
     var visiblePoints: Int = 0
-    @JvmField
     var currentAngle: Float = 0f
     var dockPointX: Float = 0f
     var dockPointY: Float = 0f
-    @JvmField
     var maskOfBitmap: IntArray? = null
-    @JvmField
     var bitmapiMul: Float = 1f
 
     init {
-        // TODO Auto-generated constructor stub
-        //mClearObject=clear_object;
-        //mObjectNumber=num;
         setOnTouchListener(this)
         currentAngle = 0f
     }
@@ -78,9 +64,9 @@ open class MovingImageView(
     val bitmapHeight: Int
         get() = (bitmap?.getHeight().orZero() * bitmapiMul).toInt() //*(GameView.isScaledBitmaps()?2:1);
 
-    fun setBitmapiMul(imul: Float) {
+    /*fun setBitmapiMul(imul: Float) {
         bitmapiMul = imul
-    }
+    }*/
 
     var angle: Float
         get() = currentAngle
@@ -149,7 +135,7 @@ open class MovingImageView(
 
     open fun setImageBitmap(bmp: Bitmap, iMul: Float) {
         setImageBitmap(bmp)
-        setBitmapiMul(iMul)
+        bitmapiMul = iMul
     }
 
     fun setDockPoint(x: Float, y: Float) {
@@ -168,7 +154,7 @@ open class MovingImageView(
         )
         animation.setDuration(200)
         animation.repeatMode = Animation.REVERSE
-        this.startAnimation(animation)
+        startAnimation(animation)
     }
 
     override fun onTouch(view: View?, me: MotionEvent): Boolean {
@@ -203,26 +189,26 @@ open class MovingImageView(
                         )
                     )
                 ) return false
-                this.bringToFront()
+                bringToFront()
                 mLastTouchX = x
                 mLastTouchY = y
                 return true
             }
 
             MotionEvent.ACTION_MOVE -> {
-                var left = (this.left - (mLastTouchX - x)).toInt()
-                var top = (this.top - (mLastTouchY - y)).toInt()
+                var leftPos = (left - (mLastTouchX - x)).toInt()
+                var topPos = (top - (mLastTouchY - y)).toInt()
                 mLastTouchX = x
                 mLastTouchY = y
                 val w = width.toFloat()
                 val h = height.toFloat()
-                if (left < 0) left = 0
-                if (left + w >= GameView.Owner.viewWidth) left =
+                if (leftPos < 0) leftPos = 0
+                if (leftPos + w >= GameView.Owner.viewWidth) leftPos =
                     (GameView.Owner.viewWidth - w).toInt()
-                if (top < 0) top = 0
-                if (top + h >= GameView.Owner.viewHeight) top =
+                if (topPos < 0) topPos = 0
+                if (topPos + h >= GameView.Owner.viewHeight) topPos =
                     (GameView.Owner.viewHeight - h).toInt()
-                mGameView.setBounds(this, left.toFloat(), top.toFloat(), left + w, top + h)
+                mGameView.setBounds(this, leftPos.toFloat(), topPos.toFloat(), leftPos + w, topPos + h)
                 val res = resources
                 val delta = TypedValue.applyDimension(
                     TypedValue.COMPLEX_UNIT_DIP,
